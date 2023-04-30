@@ -4,8 +4,8 @@ import os
 import sys
 
 payload={
-    "name": "Bob",
-    "job":  "IT"
+    "name": str(sys.argv[1]),
+    "job":  str(sys.argv[2])
 }
 
 res = requests.post("https://reqres.in/api/users",json=payload)
